@@ -9,11 +9,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@types/three": "^0.131.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
   },
   "dependencies": {
+    "@flyskypie/three-bmfont-text": "^4.0.0",
+    "dayjs": "^1.11.13",
+    "load-bmfont": "^1.4.2",
     "three": "^0.131.0"
   }
 }
