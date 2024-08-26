@@ -1,21 +1,10 @@
-import path from "path";
 import { defineConfig } from 'vite';
-import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
-
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 export default defineConfig({
-    optimizeDeps: {
-        esbuildOptions: {
-            // Node.js global to browser globalThis
-            define: {
-                global: 'globalThis',
-            },
-            // Enable esbuild polyfill plugins
-            plugins: [
-                NodeGlobalsPolyfillPlugin({
-                    buffer: true
-                })
-            ]
-        }
-    }
-})
+    base: '',
+    build: {
+        target: 'esnext' //browsers can handle the latest ES features
+    },
+    plugins: [nodePolyfills()],
+});
