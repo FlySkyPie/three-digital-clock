@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-    "@types/three": "^0.131.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "@types/three": "^0.131.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
   },
   "dependencies": {
-    "@flyskypie/three-bmfont-text": "^4.0.0",
+    "@flyskypie/three-bmfont-text": "^4.0.2",
     "dayjs": "^1.11.13",
     "load-bmfont": "^1.4.2",
-    "three": "^0.131.0"
+    "three": "^0.131.3"
   }
 }
